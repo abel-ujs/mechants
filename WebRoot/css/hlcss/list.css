@@ -1,0 +1,166 @@
+
+a {
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 9pt;
+	WORD-BREAK: break-all;
+}
+
+.HeaderStyle TH {
+	height: 26px;
+	background-color: #D7E7F6;
+	color: #125277;
+	font-size: 9pt;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+#pform{
+	width:100%;
+	border:solid 1px #6593cf;
+	background-color:#f6f6f6;
+	}
+#pform .ftitle{
+	border-bottom:1px solid #6593cf;
+	background-image:url(/images/canvassResource/page_title_bg.png);
+	background-repeat:repeat-x;
+	height:28px;
+	}
+#pform .ftitle font{
+	margin: 0 0 0 40px;
+	text-align:left;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	line-height:29px;
+	color:#FFF;
+	}
+
+/*定义录入页通用样式开始*/
+#pform .cont{
+	width:100%;
+	background-color:#f6f6f6;
+	}
+#pform .cont table{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:14px;
+	color:#333;
+		}
+#pform .cont table td{
+	line-height:42px;
+	border-bottom:solid 1px #fdfdfd;
+	background-color:#f6f6f6;
+	}
+#pform .cont .listltd{
+	width:200px;
+	text-align:right;
+	margin:0;
+	border-right:solid 1px #fdfdfd;
+	padding:0;
+	}
+#pform .cont .listltd font{
+	text-align:right;
+	float:right;
+	margin:0 9px 0 0;
+	}
+
+
+#pform .cont-list .submit-table{
+	width:100%;
+		}
+#pform .cont-list .submit-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .submit-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:15%;
+	}
+
+#pform .cont-list .save-table{
+	width:100%;
+		}
+#pform .cont-list .save-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .save-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:10%;
+	}
+
+.cont-list{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	color:#4e4e4e;
+	}
+.cont-list table{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	color:#4e4e4e;
+	}
+.cont-list a,a:visited{
+	font-family:"宋体","微软雅黑","Arial";
+	font-size:10pt;
+	color:#0018ff;
+	text-decoration:none;
+}
+.cont-list a:hover{
+	color:#F60;
+}
+
+#pform .cont .rtdchec font{
+	font-size:12px; 
+	margin-left:20px; 
+	line-height:42px;
+	}
+.fbtd {
+	width:88px;
+	text-align:left;
+	height:31px;
+	margin:0 30px 0 0px;
+	float:left;
+	}
+.fButtonDel {
+	border:none;
+	font-family:"宋体","微软雅黑";
+	font-size:14px;
+	font-weight:bold;
+	background:url(/images/canvassResource/fbotton.png) no-repeat;
+	color:#FFF;
+	width:88px;
+	height:31px;
+	line-height:31px;
+	margin-left:18px;
+	}

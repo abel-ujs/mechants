@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* 定义内容页通用样式 */
+body {
+	margin:0;
+	padding:0;
+	text-align:center;
+	background-color:#FFF;	
+}
+div, ul, li {
+	margin:0 auto;
+	padding:0;
+}
+img {
+	border:none;
+}
+a,a:visited{
+	font-family:"宋体","微软雅黑","Arial";
+	font-size:10pt;
+	color:#999;
+	text-decoration:none;
+}
+a:hover{
+	color:#F60;
+}
+
+/* 定义内容页头部样式开始 */
+#page-top{
+	width:100%;
+	height:90px;
+	background-image:url(/images/canvassResource/page_top_middle.png);
+	background-repeat:repeat-x;
+	}
+#page-top .topleft{
+	background-image:url(/images/canvassResource/page_top_left.png);
+	width:435px;
+	height:90px;
+	float:left;
+	}
+#page-top .topright{
+	background-image:url(/images/canvassResource/page_top_right.png);
+	width:360px;
+	height:90px;
+	float:right;
+	}
+/* 定义内容页头部样式结束 */
+
+/* 定义内容页登录用户信息样式开始 */
+#mess-bg{
+	border-top:1px solid #99baed ;
+	border-bottom:1px solid #6593cf ;
+	width:100%;
+	height:26px;
+	background-image:url(/images/canvassResource/page_toptitle_bg.png);
+	background-repeat:repeat-x;
+	font-family:"宋体";
+	color:#174d92;
+	font-size:12px;
+	line-height:26px;
+	}
+#mess-bg .pageleft{
+	margin:0 0 0 40px;
+	text-align:left;
+	width:30%;
+	float:left;
+	}
+#mess-bg .pageright{
+	margin:0 40px 0 0;
+	text-align:right;
+	width:50%;
+	float:right;
+	}
+/* 定义内容页登录用户信息样式结束 */
+/* 定义内容页底部样式开始 */
+#page-footer{
+	width:100%;
+	height:60px;
+	background-image:url(/images/canvassResource/page_footer.png);
+	background-repeat:repeat-x;
+	}
+#page-footer table{
+	margin:0;
+	height:40px;
+	line-height:20px;
+	color:#858585;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	text-align:center;
+	margin-top:10px;
+	vertical-align:middle;
+	}
+/* 定义内容页底部样式结束 */
+/* 定义表单样式开始 */
+#pform{
+	width:100%;
+	border:solid 1px #6593cf;
+	background-color:#f6f6f6;
+	}
+#pform .ftitle{
+	border-bottom:1px solid #6593cf;
+	background-image:url(/images/canvassResource/page_title_bg.png);
+	background-repeat:repeat-x;
+	height:28px;
+	}
+#pform .ftitle font{
+	margin: 0 0 0 40px;
+	text-align:left;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	line-height:29px;
+	color:#FFF;
+	}
+#pform .cont{
+	width:100%;
+	background-color:#f6f6f6;
+	}
+#pform .cont table{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:14px;
+	color:#333;
+		}
+#pform .cont table td{
+	line-height:42px;
+	border-bottom:solid 1px #fdfdfd;
+	}
+#pform .cont .ltd{
+	width:200px;
+	text-align:right;
+	margin:0;
+	border-right:solid 1px #fdfdfd;
+	padding:0;
+	}
+#pform .cont .ltd font{
+	text-align:right;
+	 float:right;
+	
+	margin:0 9px 0 0;
+	+margin:0 -42px 0 0;/*IE 7
+搜狗浏览器（兼容）*/
+	}
+#pform .cont .rtd input{
+	border:1px solid #b4d1ec;
+	width:200px;		
+	height:27px;
+	line-height:22px;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	font-weight:700;
+	font-weight:normal;
+	background-color:#f4f7fa;
+	margin:0 0 0 20px;
+	}
+#pform .cont .rtd select{
+	border:1px solid #b4d1ec;
+	width:90px;
+	height:25px;
+	line-height:22px;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	font-weight:700;
+	font-weight:normal;
+	background-color:#f4f7fa;
+	margin:0 0 0 20px;
+	}
+#pform-sel{
+	width:80px;
+	}
+#pform .cont .rtd{
+	width:80%;
+	text-align:left;
+	margin:0 0 0 20px;
+	padding:0;
+	}
+#pform .cont .rtdchec{
+	width:80%;
+	text-align:left;
+	
+	margin:0 0 0 20px;
+	padding:0;
+	}
+#pform .cont .rtdchec input{
+	line-height:22px;
+	height:25px;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	margin:0 0 0 20px;
+	}
+#butbg{
+	margin:15px 0 15px;
+	height:61px;
+	}
+#butbg table{
+	margin-left:220px;}
+#pform .cont .rtdchec font{
+	font-size:12px; 
+	margin-left:20px; 
+	line-height:42px;
+	}
+.fbtd {
+	width:88px;
+	text-align:left;
+	height:31px;
+	margin:0 30px 0 0px;
+	float:left;
+	}
+.fButtonDel {
+	border:none;
+	font-family:"宋体","微软雅黑";
+	font-size:14px;
+	font-weight:bold;
+	background:url(/images/canvassResource/fbotton.png) no-repeat;
+	color:#FFF;
+	width:88px;
+	height:31px;
+	line-height:31px;
+	margin-left:1px;
+	}
+<!--  
+.yxquery-addbut{
+	border:none;
+	width:18px;
+	height:22px;
+	background:url(/images/add.png) no-repeat;
+	line-height:22px;
+	}
+.yxquery-reducebut{
+	border:none;
+	width:18px;
+	height:22px;
+	background:url(/images/reduce.png) no-repeat;
+	line-height:22px;
+	margin:0 20px 0 20px;
+	}
+	-->	
+/* 定义表单样式结束 */

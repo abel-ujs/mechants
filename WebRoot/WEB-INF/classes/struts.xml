@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 默认的视图主题 -->
+    <constant name="struts.ui.theme" value="simple" />
+	<!-- 将struts2交给spring来管理 -->
+	 <constant name="struts.objectFactory" value="spring" />
+	  <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+	 <!-- 公用包 -->
+	 <package name="base" extends="struts-default">
+	 		<interceptors>
+	        	<interceptor name="privilegeInterceptor" class="merchants.web.interceptor.PermissionInterceptor"/>
+	        	<interceptor-stack name="myInterceptorStack">  
+		                <interceptor-ref name="privilegeInterceptor"/>  
+		                <interceptor-ref name="defaultStack"/>  
+		        </interceptor-stack>  
+	        </interceptors>
+	        <default-interceptor-ref name="myInterceptorStack"/>  
+	        <global-results>
+	             <result name="message">/WEB-INF/page/share/message.jsp</result>
+	             
+	        </global-results>
+	 </package>
+	  <!-- 用户登录 -->
+	 <package name="index" namespace="/" extends="base">
+	        <action name="index" class="hrPersonAction" method="loginUI">
+	     	<result name="loginUI">/WEB-INF/page/user/login.jsp</result>
+	     </action>
+	 </package>
+  	 <!-- 系统初始化 -->
+	 <package name="system" namespace="/system" extends="base">
+	     <action name="*" class="systemPrivilegeInitAction" method="{1}">
+	     </action>
+	 </package>
+	 <!-- 权限组管理/control/privilege/list -->
+	 <package name="privilege" namespace="/control/privilege" extends="base">
+	     <action name="*" class="privilegeGroupAction" method="{1}">
+	     	<result name="list">/WEB-INF/page/privilege/privilegegrouplist.jsp</result>
+	     	<result name="add">/WEB-INF/page/privilege/addprivilegegroup.jsp</result>
+	     	<result name="edit">/WEB-INF/page/privilege/editprivilegegroup.jsp</result>
+	     </action>
+	 </package>	
+	 <!-- 员工管理 -->
+	 <package name="employeemanage" namespace="/control/employee" extends="base">
+	 	 
+	     <action name="*" class="employeeManageAction" method="{1}">
+	     	<result name="list">/WEB-INF/page/employee/employeelist.jsp</result>
+	     	<result name="privilegeSet">/WEB-INF/page/employee/privilegeSet.jsp</result>
+	     	<result name="test">/WEB-INF/page/employee/test.jsp</result>
+	     </action>
+	 </package>
+	  <!-- 部门管理 -->
+	 <package name="departmentmanage" namespace="/control/department" extends="base">
+	 	 
+	     <action name="*" class="departmentManageAction" method="{1}">
+	     	<result name="list">/WEB-INF/page/department/departmentlist.jsp</result>
+	     	<result name="inputUI">/WEB-INF/page/department/departmentInput.jsp</result>
+	     	<result name="updateUI">/WEB-INF/page/department/departmentUpdate.jsp</result>
+	     	 
+	     	
+	     </action>
+	 </package>
+     <!-- 后台界面 -->
+	 <package name="user" namespace="/control/admin" extends="base">
+	      <action name="index">
+	             <result>/WEB-INF/page/control/index.jsp</result>
+	       </action>
+	       <action name="left">
+	             <result>/WEB-INF/page/control/left.jsp</result>
+	       </action>
+	       <action name="main">
+	             <result>/WEB-INF/page/control/main.jsp</result>
+	       </action>
+	        <action name="top">
+	             <result>/share/page_top.jsp</result>
+	       </action>
+	       <action name="bottom">
+	             <result>/share/page_footer.jsp</result>
+	       </action>
+	 </package>
+	    <!-- 招商资源信息管理模块-->  
+	 <package name="canvassResource" namespace="/canvassResource/front" extends="base">
+	      <action name="personal_*" class="personalAction" method="{1}">
+	      	<result name="personalDisplay">/WEB-INF/page/canvassResource/personalList.jsp</result>
+	        
+	     </action>
+	     <action name="customer_*" class="customerAction" method="{1}">
+	     	<result name="customerDisplay">/WEB-INF/page/canvassResource/customerList.jsp</result>
+	       
+	     </action>
+	       <action name="investor_*" class="investorAction" method="{1}">
+	     	<result name="investorDisplay">/WEB-INF/page/investor/investorList.jsp</result>
+	       
+	     </action>
+	 </package>
+	  <!-- 意向项目信息管理模块-->  
+	 <!--/projectInformation/front/project_ getProjectListByState  -->
+	   <package name="projectInformation" namespace="/projectInformation/front" extends="base">
+	     <action name="project_*" class="projectAction" method="{1}">
+	     	<result name="displaySaveUI">/WEB-INF/page/projectInformation/projectSaveList.jsp</result>
+	     	<result name="displaySubmitUI">/WEB-INF/page/projectInformation/projectSubmitList.jsp</result>
+	     	<result name="selectProjectSourceUI">/WEB-INF/page/projectInformation/projectSourceSelect.jsp</result>
+	     	<!-- CaiSong-->
+	        <result name="intentionCheck">/WEB-INF/page/check/intentionCheck.jsp</result>
+			<result name="communCheck">/WEB-INF/page/check/communCheck.jsp</result>
+			<result name="negotiateCheck">/WEB-INF/page/check/negotiateCheck.jsp</result>
+			<result name="outcomeCheck">/WEB-INF/page/check/outcomeCheck.jsp</result>
+			<result name="settledCheck">/WEB-INF/page/check/settledCheck.jsp</result>
+			<result name="signCheck">/WEB-INF/page/check/signCheck.jsp</result>
+			<result name="capitalCheck">/WEB-INF/page/check/capitalinCheck.jsp</result>
+			<result name="projectiEndList">/WEB-INF/page/report/projectEndList.jsp</result>
+			<result name="projectiEndListNew">/WEB-INF/page/report/projectEndListNew.jsp</result>
+
+	     </action>  
+	     
+	 </package>
+	 <!-- 招商小组理管理模块包含登录-->  
+	 <!--/canvassGroup/front/canvassGroup_groupConfigUI -->
+	   <package name="canvassGroup" namespace="/canvassGroup/front" extends="base">
+	     <action name="canvassGroup_*" class="canvassGroupAction" method="{1}">
+	     	<result name="groupConfigUI">/WEB-INF/page/group/groupConfig.jsp</result>
+	     	<result name="selectHRPersonUI">/WEB-INF/page/group/hRPersonSelect.jsp</result>
+	     	<result name="groupConfigUI">/WEB-INF/page/group/groupConfig.jsp</result>
+	     	<result name="selectHRPersonUI">/WEB-INF/page/group/hRPersonSelect.jsp</result>
+	     	<result name="ownprojectlist">/WEB-INF/page/group/ownProjectList.jsp</result>
+	     	<result name="grouppersonlist">/WEB-INF/page/group/groupPersonList.jsp</result>
+	     	<result name="selectperson">/WEB-INF/page/group/selectHRPerson.jsp</result>
+	     </action>  
+	      <!--/canvassGroup/front/hRPerson_updateUI-->
+	       <action name="hRPerson_*" class="hrPersonAction" method="{1}">
+	     	<result name="loginUI">/WEB-INF/page/user/login.jsp</result>
+	     	 <result name="loginSucceed">/WEB-INF/page/control/index.jsp</result>
+	     	<result name="updateUI">/WEB-INF/page/user/userUpdate.jsp</result>
+	     	<result name="list">/WEB-INF/page/user/userList.jsp</result>
+	     	<result name="userInfo">/WEB-INF/page/user/userInfo.jsp</result>
+	     	<result name="inputUI">/WEB-INF/page/user/userInput.jsp</result>
+	     	<result name="resetPasswordUI">/WEB-INF/page/user/resetPasswordUI.jsp</result>
+	     	
+	     	
+	     </action>
+	     <action name="outcome_*" class="outcomeAction" method="{1}">
+	     	<result name="inputUI">/WEB-INF/page/group/outcomeInput.jsp</result>	
+	     	<result name="displayUI">/WEB-INF/page/projectInformation/projectInfoDisplay.jsp</result>
+	     </action>
+	 </package>
+	 <!-- 初步沟通研判 信息录入--> 
+	<package name="group" namespace="/group/co" extends="base">
+		<action name="*" class="communAction" method="{1}">
+			<result name="submit">/WEB-INF/page/group/commun/submit.jsp</result>
+			<result name="save">/WEB-INF/page/group/commun/save.jsp</result>
+		</action>
+	</package>	
+
+	<!-- 洽谈信息录入 -->
+	<package name="nego" namespace="/group/ne" extends="base,json-default">
+		<action name="*" class="negotiateAction" method="{1}">
+			<result name="submit">/WEB-INF/page/group/negotiate/submit.jsp</result>
+			<result name="save">/WEB-INF/page/group/negotiate/save.jsp</result>
+		</action>
+
+	</package>
+	 
+	<!-- 签约信息管理 -->
+	<package name="sign" namespace="/group/sign" extends="base">
+		<action name="*" class="signAction" method="{1}">
+			<result name="submit">/WEB-INF/page/group/sign/submit.jsp</result>
+			<result name="save">/WEB-INF/page/group/sign/save.jsp</result>
+		</action>
+	</package>
+	
+	<!-- 落户信息录入 -->
+	<package name="settle" namespace="/group/se" extends="base">
+		<action name="*" class="settledAction" method="{1}">
+			<result name="submit">/WEB-INF/page/group/settled/submit.jsp</result>
+			<result name="save">/WEB-INF/page/group/settled/save.jsp</result>
+		</action>	
+	</package>
+	
+	<!--达产达效信息管理  -->
+	<package name="outcome" namespace="/group/outcome" extends="base">
+		<action name="*" class="outComeAction" method="{1}">
+			<result name="submit">/WEB-INF/page/group/outcome/submit.jsp</result>
+			<result name="save">/WEB-INF/page/group/outcome/save.jsp</result>
+		</action>	
+	</package>
+	
+	<!-- 增资扩股申请 -->
+	<package name="capital" namespace="/group/ca" extends="base">
+		<action name="*" class="capitalAction" method="{1}">
+			<result name="submit">/WEB-INF/page/group/capital/submit.jsp</result>
+			<result name="save">/WEB-INF/page/group/capital/save.jsp</result>
+		</action>
+	</package>
+	
+	<!--上传附件-->
+	<package name="upload" namespace="/group/upload" extends="base">
+		<action name="*" class="uploadAction" method="{1}">
+			<result name="selectfile">/WEB-INF/page/group/selectfile.jsp</result>
+			<result name="message1">/WEB-INF/page/group/message1.jsp</result>
+		</action>
+	</package>
+	<!-- 报表管理 -->
+<package name="report" namespace="/report" extends="base">
+		<action name="report_*" class="reportAction" method="{1}">
+			<result name="projectList">/WEB-INF/page/report/selectedList.jsp</result>
+			<result name="category">/WEB-INF/page/report/groupByCategory.jsp</result>
+			<result name="industry">/WEB-INF/page/report/groupByIndustry.jsp</result>
+			<result name="scale">/WEB-INF/page/report/groupByScale.jsp</result>
+			<result name="source">/WEB-INF/page/report/groupBySource.jsp</result>
+			<result name="state">/WEB-INF/page/report/groupByState.jsp</result>
+			<result name="final">/WEB-INF/page/report/report.jsp</result>
+			<result name="categoryList">/WEB-INF/page/report/categoryList.jsp</result>
+			<result name="industryList">/WEB-INF/page/report/industryList.jsp</result>
+			<result name="scaleList">/WEB-INF/page/report/scaleList.jsp</result>
+			<result name="sourceList">/WEB-INF/page/report/sourceList.jsp</result>
+			<result name="stateList">/WEB-INF/page/report/stateList.jsp</result>
+		</action>
+	</package>
+
+	
+</struts>

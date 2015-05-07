@@ -1,0 +1,482 @@
+@charset "utf-8";
+/*定义录入页通用样式开始*/
+#pform .cont{
+	width:100%;
+	background-color:#f6f6f6;
+	}
+#pform .cont table{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:14px;
+	color:#333;
+		}
+#pform .cont table td{
+	line-height:42px;
+	border-bottom:solid 1px #fdfdfd;
+	background-color:#f6f6f6;
+	}
+#pform .cont .listltd{
+	width:200px;
+	text-align:right;
+	margin:0;
+	border-right:solid 1px #fdfdfd;
+	padding:0;
+	}
+#pform .cont .listltd font{
+	text-align:right;
+	float:right;
+	margin:0 9px 0 0;
+	}
+#pform .cont .listrtd input{
+	border:1px solid #b4d1ec;
+	width:200px;
+	height:26px;
+	line-height:22px;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	font-weight:700;
+	font-weight:normal;
+	background-color:#f4f7fa;
+	margin:0 0 0 20px;
+	}
+#pform .cont .listrtd select{
+	border:1px solid #b4d1ec;
+	width:100px;
+	height:22px;
+	line-height:22px;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	background-color:#f4f7fa;
+	margin:0 0 0 20px;
+	}
+#pform .cont .listrtd{
+	width:450px;
+	text-align:left;
+	margin:0 0 0 0px;
+	padding:0;
+	}
+#pform .cont .listrtd TEXTAREA{
+	width:450px;
+	border:1px solid #b4d1ec;
+	line-height:22px;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	background-color:#f4f7fa;
+	margin:10px 0 10px 20px;
+	}
+#pform .cont .listrtdload{
+	float:left;
+	margin:10px 0 0 20px;
+	vertical-align:central;
+	padding:0;
+	}
+#pform .cont .prompt font{
+	font-family:"宋体","微软雅黑";
+	font-size:12px;
+	color:#7d7d7d;
+	width:80px;
+	height:26px;
+	line-height:26px;
+	margin-left:0px;
+	float:left;}
+.loadButton {
+	border:none;
+	font-family:"宋体","微软雅黑";
+	font-size:12px;
+	background:url(/images/canvassResource/loadbutton.png) no-repeat;
+	color:#7d7d7d;
+	width:80px;
+	height:26px;
+	line-height:26px;
+	margin-left:18px;
+	float:left;
+	}
+#butbg{
+	margin:15px 0 15px;
+	height:61px;
+	}
+#butbg table{
+	margin-left:220px;}
+.fbtd {
+	width:88px;
+	text-align:left;
+	height:31px;
+	margin:0 30px 0 0px;
+	float:left;
+	}
+.fButtonDel {
+	border:none;
+	font-family:"宋体","微软雅黑";
+	font-size:14px;
+	font-weight:bold;
+	background:url(/images/canvassResource/fbutton.png) no-repeat;
+	color:#FFF;
+	width:88px;
+	height:31px;
+	line-height:31px;
+	margin-left:1px;
+	}
+/*定义录入页通用样式结束*/
+
+/*定义提交列表页通用样式开始*/
+.cont-list{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	color:#4e4e4e;
+	}
+.cont-list table{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:14px;
+	color:#333;
+		}
+.cont-list a,a:visited{
+	font-family:"宋体","微软雅黑","Arial";
+	font-size:10pt;
+	color:#0018ff;
+	text-decoration:none;
+}
+.cont-list a:hover{
+	color:#F60;
+}
+#pform .cont-list .submit-table{
+	width:100%;
+		}
+#pform .cont-list .submit-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .submit-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:15%;
+	}
+/*定义提交列表页通用样式结束*/
+
+
+/*定义保存列表页通用样式开始*/
+#pform .cont-list .save-table{
+	width:100%;
+		}
+#pform .cont-list .save-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .save-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:10%;
+	}
+/*定义保存列表页通用样式结束*/
+
+
+/*定义研判提交列表页通用样式开始*/
+.cont-list{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	color:#4e4e4e;
+	}
+.cont-list table{
+	width:100%;
+	font-family: "宋体", "微软雅黑";
+	font-size:12px;
+	color:#4e4e4e;
+	}
+.cont-list a,a:visited{
+	font-family:"宋体","微软雅黑","Arial";
+	font-size:10pt;
+	color:#0018ff;
+	text-decoration:none;
+}
+.cont-list a:hover{
+	color:#F60;
+}
+#pform .cont-list .study-table{
+	width:100%;
+		}
+#pform .cont-list .study-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .study-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:11%;
+	}
+/*定义研判提交列表页通用样式结束*/
+
+
+/*定义研判保存列表页通用样式开始*/
+#pform .cont-list .studysave-table{
+	width:100%;
+		}
+#pform .cont-list .studysave-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .studysave-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:9%;
+	}
+/*定义研判保存列表页通用样式结束*/
+
+
+/*定义签约提交列表页通用样式开始*/
+#pform .cont-list .sign-table{
+	width:100%;
+		}
+#pform .cont-list .sign-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .sign-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:11%;
+	}
+/*定义研签约提交列表页通用样式结束*/
+
+
+/*定义签约保存列表页通用样式开始*/
+#pform .cont-list .signsave-table{
+	width:100%;
+		}
+#pform .cont-list .signsave-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .signsave-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:11%;
+	}
+/*定义签约保存列表页通用样式结束*/
+
+/*定义洽谈提交列表页通用样式开始*/
+#pform .cont-list .make-table{
+	width:100%;
+		}
+#pform .cont-list .make-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .make-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:9%;
+	}
+/*定义洽谈提交列表页通用样式结束*/
+
+
+/*定义洽谈保存列表页通用样式开始*/
+#pform .cont-list .makesave-table{
+	width:100%;
+		}
+#pform .cont-list .makesave-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .makesave-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:7.6%;
+	}
+/*定义洽谈保存列表页通用样式结束*/
+
+/*定义落户提交列表页通用样式开始*/
+#pform .cont-list .settle-table{
+	width:100%;
+		}
+#pform .cont-list .settle-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .settle-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:16%;
+	}
+/*定义落户提交列表页通用样式结束*/
+
+
+/*定义落户保存列表页通用样式开始*/
+#pform .cont-list .settlesave-table{
+	width:100%;
+		}
+#pform .cont-list .settlesave-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .settlesave-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:11%;
+	}
+/*定义落户保存列表页通用样式结束*/
+/*定义达产达效左侧样式*/
+#pform .cont .listltd-Reaches{
+	width:300px;
+	text-align:right;
+	margin:0;
+	border-right:solid 1px #fdfdfd;
+	padding:0;
+	}
+/*定义达产达效提交列表页通用样式开始*/
+#pform .cont-list .rsettle-table{
+	width:100%;
+		}
+#pform .cont-list .rsettle-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+#pform .cont-list .rsettle-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:13%;
+	}
+/*定义达产达效提交列表页通用样式结束*/
+
+
+/*定义达产达效保存列表页通用样式开始*/
+.rsettlesave-table{
+	width:100%;
+		}
+.rsettlesave-table td{
+	line-height:24px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-color:#e4eaef;
+	text-align:center;
+	padding:8px;
+	}
+.rsettlesave-table th{
+	line-height:42px;
+	border-bottom:solid 1px #fcfcfc;
+	border-right:solid 1px #fcfcfc;
+	background-image:url(/images/canvassResource/list_title.png);
+	background-repeat:repeat-x;
+	height:24px;
+	line-height:24px;
+	width:10%;
+
+}
+<!-- 
+.yxquery-addbut{
+	border:none;
+	width:18px;
+	height:22px;
+	background:url(/images/add.png) no-repeat;
+	line-height:22px;
+	}
+.yxquery-reducebut{
+	border:none;
+	width:18px;
+	height:22px;
+	background:url(/images/reduce.png) no-repeat;
+	line-height:22px;
+	margin:0 20px 0 20px;
+	}
+	-->
+/*定义达产达效保存列表页通用样式结束*/

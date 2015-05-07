@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* 定义消息提示页面样式 */
+body {
+	margin:0;
+	padding:0;
+	text-align:center;
+	background-color:#FFF;	
+}
+div, ul, li {
+	margin:0 auto;
+	padding:0;
+}
+img {
+	border:none;
+}
+a,a:visited{
+	font-family:"微软雅黑","宋体";
+	font-size:10pt;
+	color:#999;
+	text-decoration:none;
+}
+a:hover{
+	color:#F60;
+}
+#mess-bor{
+	text-align:center;
+	width:400px;
+	height:200px;
+	border:solid 1px #6bb2ff;
+	margin-top:200px;
+	}
+#mess-innerbor{
+	border:solid 1px #FFF;
+	}
+#mess-innerbor .messtitle{
+	background-image:url(/images/message/messtitle_bg.png);
+	background-repeat:repeat-x;
+	height:31px;
+	width:396px;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:32px;
+	text-align:left;
+	}
+#mess-innerbor .messtitle font{
+	margin-left:30px;
+	}
+#mess-innerbor .messmiddle{
+	margin:20px 0 0 0;
+	border-bottom:solid 1px #ccc;
+	font-size:12px;
+	text-align:center;
+	color:#4e4a38;
+	width:396px;
+	height:100px
+	}
+#mess-innerbor .messmiddle img{
+	margin:0px 30px 20px 30px;
+	height:75px;
+	width:50px;
+	float:left;
+	}
+#mess-innerbor .messmiddleright{
+	width:250px;
+	height:100px;
+	float:none;
+	}
+#mess-innerbor .messmiddleright p{
+	margin:0px 30px 20px 0;
+	font-size:12px;
+	text-align:center;
+	color:#4e4a38;
+	}
+#mess-innerbor .messbut{
+	margin:10px 60px 0 0;
+	float:right;
+	width:64px;
+	height:23px;
+	}
+.mess-ButtonDel {
+	border:none;
+	font-family:"宋体","微软雅黑";
+	font-size:14px;
+	font-weight:bold;
+	color:#FFF;
+	width:64px;
+	height:23px;
+	line-height:23px;
+	background-image:url(/images/message/mess_but.png) ;
+	background-repeat:no-repeat;
+	}
